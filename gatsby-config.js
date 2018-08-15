@@ -8,7 +8,7 @@ module.exports = {
 		description: 'Starter for Gatsby on netlify.',
 		type: 'Person',
 		name: 'Charbel Chahine',
-		url: 'https://wise-starter.netlify.com',
+		url: 'https://broadsign.netlify.com/',
 		sameAs: [
 			'http://www.facebook.com/your-profile',
 			'http://www.twitter.com/yourProfile'
@@ -16,7 +16,7 @@ module.exports = {
 		facebookAppID: '',
 		twitterSiteID: '',
 		twitterUserID: '',
-		siteUrl: 'https://wise-starter.netlify.com'
+		siteUrl: 'https://broadsign.netlify.com/'
 	},
 	plugins: [
 		{

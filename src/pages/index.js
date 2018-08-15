@@ -9,8 +9,8 @@ import { Button } from 'react-md';
 import '../styles/css/index.css';
 
 const seo = {
-	title: 'Home Page',
-	description: 'That is a Wise Story'
+	title: 'Broadsign Prototype Home Page',
+	description: 'That is a Gatsby Site hosted on Netlify'
 }
 
 const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
