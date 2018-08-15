@@ -4054,6 +4054,10 @@ template {
 [hidden] {
   display: none; }
 
+.content {
+  max-width: 1200px;
+  margin: 0 auto; }
+
 .broadsignLogo {
   max-height: 3rem;
   max-width: 13rem; }

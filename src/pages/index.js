@@ -33,7 +33,13 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 			}}
 		/>
 		<p>{T.translate('home.message')}</p>
-		<ul>
+		<Link to="/blog">
+			<Button flat>Blog</Button>
+		</Link>
+		<Link to="/careers">
+				<Button flat>{T.translate('careers.title')}</Button>
+		</Link>
+		<ul className="content">
 			<li>
 				<Link to="/image">{T.translate('image.title')}</Link>
 			</li>
@@ -45,12 +51,6 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 			</li>
 			<li>
 				<Link to="/test-page">{T.translate('test.title')}</Link>
-			</li>
-			<li>
-				<Link to="/careers">{T.translate('careers.title')}</Link>
-			</li>
-			<li>
-				<Link to="/blog">Blog</Link>
 			</li>
 		</ul>
 	</Layout>
