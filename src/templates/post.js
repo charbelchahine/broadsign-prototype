@@ -10,8 +10,9 @@ import Img from "gatsby-image"
 
 const PostPage = ({pageContext, location, data }) => {
 
-const { lang } = pageContext;
+	const { lang } = pageContext;
 	const { pathname } = location;
+	
 	return (
 		<Layout path={pathname}>
 		{T.setTexts(lang)}

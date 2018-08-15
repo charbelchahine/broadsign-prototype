@@ -4057,8 +4057,7 @@ template {
 body {
   background-color: #DFE3E8;
   overflow-x: hidden;
-  position: relative;
-  overflow-y: -webkit-paged-x; }
+  position: relative; }
 
 #___gatsby {
   max-width: 1600px;
