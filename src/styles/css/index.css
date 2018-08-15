@@ -3755,5 +3755,8 @@ svg.md-icon {
 
   .md-background--secondary-hover:hover {
     background: rgba(255, 64, 129, 0.9); } }
+.broadsignLogo {
+  max-height: 4rem;
+  max-width: 18rem; }
 
 /*# sourceMappingURL=index.css.map */

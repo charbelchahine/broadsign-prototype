@@ -37,6 +37,12 @@ module.exports = {
 		'gatsby-plugin-sharp',
 		'gatsby-plugin-react-helmet',
 		{
+			resolve: 'gatsby-plugin-react-svg',
+			options: {
+				include: /assets/
+			}
+		},
+		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
 				name: 'Broadsign',
