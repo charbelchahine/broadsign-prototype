@@ -12,7 +12,7 @@ const Careers = ({ pageContext: { lang }, location: { pathname } }) => (
 		<h1>
 			{T.translate('careers.header')}
 		</h1>
-		<div id="BambooHR-ATS">{import_careers()}</div>
+		<div id="BambooHR-ATS" className="content">{import_careers()}</div>
 	</Layout>
 )
 

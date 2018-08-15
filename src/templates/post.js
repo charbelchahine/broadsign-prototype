@@ -17,11 +17,13 @@ const PostPage = ({pageContext, location, data }) => {
 		<Layout path={pathname}>
 		{T.setTexts(lang)}
 		<Helmet title={data.wordpressPost.title} />
+		<div className="content">
 			{data.wordpressPost.featured_media && data.wordpressPost.featured_media.localFile && data.wordpressPost.featured_media.localFile.childImageSharp && data.wordpressPost.featured_media.localFile.childImageSharp.fixed && 
-		 	<Img fixed={data.wordpressPost.featured_media.localFile.childImageSharp.fixed}/>}
-		
-		<h1 dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }} />
-		<div dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }} />
+			<Img fixed={data.wordpressPost.featured_media.localFile.childImageSharp.fixed}/>}
+
+			<h1 dangerouslySetInnerHTML={{ __html: data.wordpressPost.title }} />
+			<div dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }} />
+		</div>
 	</Layout>
 );
 
