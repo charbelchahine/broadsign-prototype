@@ -4054,6 +4054,10 @@ template {
 [hidden] {
   display: none; }
 
+body {
+  max-width: 1600px;
+  margin: 0 auto; }
+
 .content {
   max-width: 1200px;
   margin: 0 auto; }
