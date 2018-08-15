@@ -1,4 +1,5 @@
 @import '../../../node_modules/react-md/src/scss/react-md';
 @include react-md-everything;
 
+@import './normalize';
 @import './components/nav';
