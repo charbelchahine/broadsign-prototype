@@ -1,6 +1,14 @@
 body {
+	background-color: #DFE3E8;
+	overflow-x: hidden;
+	position: relative;
+	overflow-y: -webkit-paged-x;
+}
+
+#___gatsby {
 	max-width: 1600px;
 	margin: 0 auto;
+	background-color: white;
 }
 
 .content {
