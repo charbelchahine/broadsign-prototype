@@ -15,7 +15,6 @@
 		"gatsby-plugin-nprogress": "next",
 		"gatsby-plugin-offline": "next",
 		"gatsby-plugin-react-helmet": "next",
-		"gatsby-plugin-react-svg": "^1.1.1",
 		"gatsby-plugin-sass": "next",
 		"gatsby-plugin-sharp": "next",
 		"gatsby-plugin-sitemap": "next",
