@@ -17,19 +17,21 @@ const BlogPage = ({pageContext, location, data }) => {
 		<Layout path={pathname}>
 		{T.setTexts(lang)}
 		<Helmet title="Blog" />
-		{data.allWordpressPost.edges.map(({node}) => (
-			<div key={node.slug}>
-			
-			{node.featured_media && node.featured_media.localFile && node.featured_media.localFile.childImageSharp && node.featured_media.localFile.childImageSharp.fixed && 
-		 	<Img fixed={node.featured_media.localFile.childImageSharp.fixed}/>}
-			
-				<Link to={'/blog/' + node.slug}>
-                	<h3>{node.title}</h3>
-                </Link>
-                </div>
-		))}
-			</Layout>
-);
+		<div className="content">
+			{data.allWordpressPost.edges.map(({node}) => (
+				<div key={node.slug}>
+
+					{node.featured_media && node.featured_media.localFile && node.featured_media.localFile.childImageSharp && node.featured_media.localFile.childImageSharp.fixed && 
+					<Img fixed={node.featured_media.localFile.childImageSharp.fixed}/>}
+
+					<Link to={'/blog/' + node.slug}>
+						<h3>{node.title}</h3>
+					</Link>
+				</div>
+			))}
+		</div>
+		</Layout>
+	);
 };
 export default BlogPage;
 
