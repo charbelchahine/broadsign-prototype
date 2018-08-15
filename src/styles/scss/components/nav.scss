@@ -1,4 +1,21 @@
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navLogo {
+	display: contents;
+}
+
 .broadsignLogo {
 	max-height: 3rem;
 	max-width: 13rem;
+}
+
+.navLinks {
+	display: flex;
+}
+
+.langSelector {
+	display: flex;
 }

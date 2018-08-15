@@ -3,8 +3,6 @@ import T from 'i18n-react'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'
 import Link from '../components/link'
-import { Button } from 'react-md';
-
 
 import '../styles/css/index.css';
 
@@ -18,7 +16,6 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 		{T.setTexts(lang)}
 		<Helmet title={T.translate('home.title')} />
 		<h1>{T.translate('home.header')} !</h1>
-		<Button flat className="homebutton">{T.translate('home.header')} !</Button>
 		<T.p
 			text={{
 				key: 'home.welcome',
@@ -33,12 +30,6 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 			}}
 		/>
 		<p>{T.translate('home.message')}</p>
-		<Link to="/blog">
-			<Button flat>Blog</Button>
-		</Link>
-		<Link to="/careers">
-				<Button flat>{T.translate('careers.title')}</Button>
-		</Link>
 		<ul className="content">
 			<li>
 				<Link to="/image">{T.translate('image.title')}</Link>

@@ -24,7 +24,7 @@ class LangSelector extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="langSelector">
 				<select
 					onChange={this.handleChange}
 					value={this.state.value}
