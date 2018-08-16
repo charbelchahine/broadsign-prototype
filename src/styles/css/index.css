@@ -4134,9 +4134,15 @@ section#homeHeader {
   section#homeHeader #title {
     font-family: "Roboto Black", sans-serif;
     font-variant: small-caps;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 160px;
+    line-height: 130px;
+    width: 800px; }
   section#homeHeader #description {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase; }
+    font-family: "Roboto Black", sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 30px;
+    width: 800px; }
 
 /*# sourceMappingURL=index.css.map */
