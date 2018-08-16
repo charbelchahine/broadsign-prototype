@@ -1,6 +1,4 @@
 section#homeHeader {
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 578px;
   max-height: 578px; }
 
@@ -9,12 +7,18 @@ section#homeHeader #title, section#homeHeader #description {
   margin: 0; }
 
 section#homeHeader {
-  background-image: url(/static/3e14fc1d840a1aab60d032a0f0d58445-d4e4fddfa40d4bd7325b798c049d339c-b3f58.png);
   display: flex;
   align-items: center; }
+  section#homeHeader .homeHeader {
+    position: absolute; }
+  section#homeHeader #text {
+    z-index: 2; }
   section#homeHeader #title {
     font-family: "Roboto Black", sans-serif;
     font-variant: small-caps;
+    text-transform: uppercase; }
+  section#homeHeader #description {
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase; }
 
 /*# sourceMappingURL=homepage.css.map */

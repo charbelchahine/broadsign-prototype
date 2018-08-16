@@ -4,6 +4,8 @@ import Layout from '../components/layout'
 import Helmet from 'react-helmet'
 import Link from '../components/link'
 
+import homeHeader from '../assets/images/homeHeader.png'
+
 import '../styles/css/index.css';
 
 const seo = {
@@ -16,6 +18,7 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 		{T.setTexts(lang)}
 		<Helmet title={T.translate('home.title')} />
 		<section id="homeHeader">
+			<img src={homeHeader} alt="homeHeader" className="homeHeader" />
 			<div id="text" className="content">
 				<h1 id="title">Light up the world</h1>
 				<p id="description">We're making it easier than ever to buy, sell and deliver digital out-of-home media accross the globe</p>
