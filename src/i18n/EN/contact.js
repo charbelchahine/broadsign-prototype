@@ -1,5 +1,5 @@
 module.exports = {
-	title: 'Test',
-	header: 'Test Page',
+	title: 'Contact Us',
+	header: 'Contact Us',
 	message: 'This is a test'
 }

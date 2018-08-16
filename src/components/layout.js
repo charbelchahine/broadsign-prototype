@@ -17,6 +17,9 @@ export default ({ children, path, seo }) => (
 				<Link to="/careers">
 					<Button flat>{T.translate('careers.title')}</Button>
 				</Link>
+				<Link to="/contact">
+					<Button flat>{T.translate('contact.title')}</Button>
+				</Link>
 				<Lang path={path} />
 			</div>
 		</Header>

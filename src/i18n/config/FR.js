@@ -3,7 +3,7 @@ var image = require('../FR/image')
 var article = require('../FR/article')
 var thanks = require('../FR/thanks')
 var e404 = require('../FR/e404')
-var test = require('../FR/test')
+var contact = require('../FR/contact')
 var careers = require('../FR/careers')
 
 module.exports = {
@@ -15,6 +15,6 @@ module.exports = {
 	article,
 	thanks,
 	e404,
-	test,
+	contact,
 	careers,
 }

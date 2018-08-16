@@ -53,9 +53,6 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 			<li>
 				<Link to="/404">{T.translate('e404.title')}</Link>
 			</li>
-			<li>
-				<Link to="/test-page">{T.translate('test.title')}</Link>
-			</li>
 		</ul>
 	</Layout>
 )
