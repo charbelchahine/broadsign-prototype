@@ -4628,6 +4628,10 @@ gatsby-plugin-catch-links@next:
   dependencies:
     "@babel/runtime" "7.0.0-beta.51"
 
+gatsby-plugin-google-fonts@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-0.0.4.tgz#dc1402a71f27c3ae6caee10777d10adadf74bd7c"
+
 gatsby-plugin-manifest@next:
   version "2.0.2-beta.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.2-beta.2.tgz#118fd00b22aa6abd64ccaf9a99c1205e5be9c15f"
@@ -10515,6 +10519,10 @@ type-of@^2.0.1:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+
+typeface-roboto@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-roboto/-/typeface-roboto-0.0.54.tgz#8f02c9a18d1cfa7f49381a6ff0d21ff061f38ad2"
 
 ua-parser-js@^0.7.18:
   version "0.7.18"

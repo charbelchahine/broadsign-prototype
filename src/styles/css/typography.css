@@ -1,18 +1,3 @@
-body {
-  background-color: #DFE3E8;
-  overflow-x: hidden;
-  position: relative; }
-
-#___gatsby {
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: white; }
-
-.content {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%; }
-
 @font-face {
   font-family: roboto;
   src: url("/../../fonts/roboto.woff2") format("woff2"), url("/../../fonts/roboto.woff") format("woff"), url("/../../fonts/roboto.ttf") format("truetype"); }
@@ -43,40 +28,5 @@ body {
 @font-face {
   font-family: merriweather thin;
   src: url("/../../fonts/merriweather-thin.woff2") format("woff2"), url("/../../fonts/merriweather-thin.woff") format("woff"), url("/../../fonts/merriweather-thin.ttf") format("truetype"); }
-header {
-  display: flex;
-  justify-content: space-between; }
 
-.navLogo {
-  display: contents; }
-
-.broadsignLogo {
-  max-height: 3rem;
-  max-width: 13rem; }
-
-.navLinks {
-  display: flex; }
-
-.langSelector {
-  display: flex; }
-
-section#homeHeader {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 578px;
-  max-height: 578px; }
-
-section#homeHeader #title, section#homeHeader #description {
-  color: white;
-  margin: 0; }
-
-section#homeHeader {
-  background-image: url(/static/3e14fc1d840a1aab60d032a0f0d58445-d4e4fddfa40d4bd7325b798c049d339c-b3f58.png);
-  display: flex;
-  align-items: center; }
-  section#homeHeader #title {
-    font-family: "Roboto Black", sans-serif;
-    font-variant: small-caps;
-    text-transform: uppercase; }
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=typography.css.map */

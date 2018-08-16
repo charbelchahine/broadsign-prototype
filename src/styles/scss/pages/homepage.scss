@@ -1,0 +1,28 @@
+%headers {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 578px;
+	max-height: 578px;
+}
+
+%white-text {
+	color: white;
+	margin: 0;
+}
+
+section#homeHeader {
+	@extend %headers;
+	background-image: url(/static/3e14fc1d840a1aab60d032a0f0d58445-d4e4fddfa40d4bd7325b798c049d339c-b3f58.png);
+	display: flex;
+	align-items: center;
+	#title {
+		@extend %white-text;
+		font-family: "Roboto Black", sans-serif;
+		font-variant: small-caps;
+		text-transform: uppercase;
+	}
+	#description {
+		@extend %white-text;
+	}
+}
+
