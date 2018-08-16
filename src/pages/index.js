@@ -20,7 +20,7 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 		<section id="homeHeader">
 			<img src={homeHeader} alt="homeHeader" className="homeHeader" />
 			<div id="text" className="content">
-				<h1 id="title">Light up the world</h1>
+				<h1 id="title">{T.translate('home.header')}</h1>
 				<p id="description">We're making it easier than ever to buy, sell and deliver digital out-of-home media accross the globe</p>
 			</div>
 		</section>
