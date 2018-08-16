@@ -3,7 +3,7 @@ import T from 'i18n-react'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'
 import Link from '../components/link'
-
+import { Button } from 'react-md';
 import homeHeader from '../assets/images/homeHeader.png'
 
 import '../styles/css/index.css';
@@ -22,6 +22,10 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 			<div id="text" className="content">
 				<h1 id="title">{T.translate('home.header')}</h1>
 				<p id="description">We're making it easier than ever to buy, sell and deliver digital out-of-home media accross the globe</p>
+				<div id="ctas">
+					<Button raised secondary swapTheming id="freeTrial">Start a free trial</Button>
+					<Button raised primary swapTheming id="liveDemo">Request a live demo</Button>
+				</div>
 			</div>
 		</section>
 		<h1>{T.translate('home.header')} !</h1>

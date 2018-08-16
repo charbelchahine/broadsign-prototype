@@ -25,6 +25,14 @@ section#homeHeader {
     text-transform: uppercase;
     font-size: 24px;
     line-height: 30px;
-    width: 800px; }
+    width: 800px;
+    margin: 10px 0 30px; }
+  section#homeHeader #ctas #freeTrial {
+    background-color: red;
+    color: white;
+    margin-right: 10px; }
+  section#homeHeader #ctas #liveDemo {
+    background-color: #1c3356;
+    color: #00C8ff; }
 
 /*# sourceMappingURL=homepage.css.map */
