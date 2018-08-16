@@ -23,8 +23,8 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 				<h1 id="title">{T.translate('home.header')}</h1>
 				<p id="description">We're making it easier than ever to buy, sell and deliver digital out-of-home media accross the globe</p>
 				<div id="ctas">
-					<Button raised secondary swapTheming id="freeTrial">Start a free trial</Button>
-					<Button raised primary swapTheming id="liveDemo">Request a live demo</Button>
+					<Button raised secondary swapTheming id="freeTrial">{T.translate('home.freeTrial')}</Button>
+					<Button raised primary swapTheming id="liveDemo">{T.translate('home.liveDemo')}</Button>
 				</div>
 			</div>
 		</section>
