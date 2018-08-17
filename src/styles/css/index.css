@@ -4221,6 +4221,10 @@ section#contactContent .contact {
     display: flex;
     flex-direction: column; }
 
+#adress span {
+  font-size: 18px;
+  line-height: 30px; }
+
 #gradientBar {
   background: #19CDFF;
   background: linear-gradient(to right, #19cdff 15%, #1e1bb2 45%, #ff1919 90%);
