@@ -13,6 +13,31 @@ const ThanksPage = ({ pageContext: { lang }, location: { pathname } }) => (
 		</h1>
 		<p>{T.translate('thanks.message')}</p>
 		<Link to="/">{T.translate('thanks.link')}</Link>
+<p>{T.translate('home.message')}</p>
+		<T.p
+			text={{
+				key: 'home.welcome',
+				var: (
+					<a
+						href="https://github.com/TomPichaud/wise-starter"
+						target="_blank"
+						rel="noopener noreferrer">
+						Wise
+					</a>
+				)
+			}}
+		/>
+		<ul className="content">
+			<li>
+				<Link to="/image">{T.translate('image.title')}</Link>
+			</li>
+			<li>
+				<Link to="/thanks">{T.translate('thanks.title')}</Link>
+			</li>
+			<li>
+				<Link to="/404">{T.translate('e404.title')}</Link>
+			</li>
+		</ul> 
 	</Layout>
 )
 

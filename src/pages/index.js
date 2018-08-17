@@ -4,9 +4,19 @@ import Layout from '../components/layout'
 import Helmet from 'react-helmet'
 import Link from '../components/link'
 import { Button } from 'react-md';
+
 import homeHeader from '../assets/images/homeHeader.png'
 import timeSquare from '../assets/images/timeSquare.png'
 
+import broadsignControl from '../assets/images/broadsignControl.svg'
+import broadsignReach from '../assets/images/broadsignReach.svg'
+import broasignDirect from '../assets/images/broadsignDirect.svg'
+import broadsignPublish from '../assets/images/broadsignPublish.svg'
+
+import controlLaptop from '../assets/images/controlLaptop.svg'
+import directLaptop from '../assets/images/directLaptop.svg'
+import publishLaptop from '../assets/images/publishLaptop.svg'
+import reachLaptop from '../assets/images/reachLaptop.svg'
 
 import '../styles/css/index.css';
 
@@ -39,31 +49,36 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 				</div>
 			</div>		
 		</section>
-		<T.p
-			text={{
-				key: 'home.welcome',
-				var: (
-					<a
-						href="https://github.com/TomPichaud/wise-starter"
-						target="_blank"
-						rel="noopener noreferrer">
-						Wise
-					</a>
-				)
-			}}
-		/>
-		<p>{T.translate('home.message')}</p>
-		<ul className="content">
-			<li>
-				<Link to="/image">{T.translate('image.title')}</Link>
-			</li>
-			<li>
-				<Link to="/thanks">{T.translate('thanks.title')}</Link>
-			</li>
-			<li>
-				<Link to="/404">{T.translate('e404.title')}</Link>
-			</li>
-		</ul>
+		<section id="homeProducts" className="content">
+			<div className="productRow">
+				<div className="productText">
+					<img src={broadsignControl} alt="broadsignControl" className="broadsignControl" />
+					<span>Distribute content and ads across a network of any size with automated digital signage software</span>
+				</div>
+				<img src={controlLaptop} alt="controlLaptop" className="controlLaptop" />
+			</div>
+			<div className="productRow">
+				<div className="productText">
+					<img src={broadsignReach} alt="broadsignReach" className="broadsignReach" />
+					<span>Generate more revenue from your digital signage network with programmatic advertising sales</span>
+				</div>
+				<img src={reachLaptop} alt="reachLaptop" className="reachLaptop" />
+			</div>
+			<div className="productRow">
+				<div className="productText">
+					<img src={broasignDirect} alt="broasignDirect" className="broasignDirect" />
+					<span>Sell smarter with a sales tool that syncs ad inventory with your network operations in real-time</span>
+				</div>
+				<img src={directLaptop} alt="directLaptop" className="directLaptop" />
+			</div>
+			<div className="productRow">
+				<div className="productText">
+					<img src={broadsignPublish} alt="broadsignPublish" className="broadsignPublish" />
+					<span>Empower local teams to display beautiful custom digital signage messages with template-based content management</span>
+				</div>
+				<img src={publishLaptop} alt="publishLaptop" className="publishLaptop" />
+			</div>		
+		</section>
 	</Layout>
 )
 
