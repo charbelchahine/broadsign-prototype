@@ -7,6 +7,11 @@ import { Button } from 'react-md';
 import homeHeader from '../assets/images/homeHeader.png'
 import timeSquare from '../assets/images/timeSquare.png'
 
+import broadsignControl from '../assets/images/broadsignControl.svg'
+import broadsignReach from '../assets/images/broadsignReach.svg'
+import broasignDirect from '../assets/images/broadsignDirect.svg'
+import broadsignPublish from '../assets/images/broadsignPublish.svg'
+
 import controlLaptop from '../assets/images/controlLaptop.svg'
 import directLaptop from '../assets/images/directLaptop.svg'
 import publishLaptop from '../assets/images/publishLaptop.svg'
@@ -46,24 +51,28 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 		<section id="homeProducts" className="content">
 			<div className="productRow">
 				<div className="productText">
+					<img src={broadsignControl} alt="broadsignControl" className="broadsignControl" />
 					<span>{T.translate('home.distribute')}</span>
 				</div>
 				<img src={controlLaptop} alt="controlLaptop" className="controlLaptop" />
 			</div>
 			<div className="productRow">
 				<div className="productText">
+					<img src={broadsignReach} alt="broadsignReach" className="broadsignReach" />
 					<span>{T.translate('home.generate')}</span>
 				</div>
 				<img src={reachLaptop} alt="reachLaptop" className="reachLaptop" />
 			</div>
 			<div className="productRow">
 				<div className="productText">
+					<img src={broasignDirect} alt="broasignDirect" className="broasignDirect" />
 					<span>{T.translate('home.sell')}</span>
 				</div>
 				<img src={directLaptop} alt="directLaptop" className="directLaptop" />
 			</div>
 			<div className="productRow">
 				<div className="productText">
+					<img src={broadsignPublish} alt="broadsignPublish" className="broadsignPublish" />
 					<span>{T.translate('home.empower')}</span>
 				</div>
 				<img src={publishLaptop} alt="publishLaptop" className="publishLaptop" />
