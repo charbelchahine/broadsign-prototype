@@ -2,7 +2,6 @@ import React from 'react'
 import T from 'i18n-react'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'
-import Link from '../components/link'
 import { Button } from 'react-md';
 
 import homeHeader from '../assets/images/homeHeader.png'
