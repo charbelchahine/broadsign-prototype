@@ -12,4 +12,10 @@ module.exports = {
 	belgium: 'Belgium',
 	germany: 'Germany',
 	china: 'China',
+	inquiry: 'Type of Inquiry',
+	email: 'Email',
+	first: 'First name',
+	last: 'Last name',
+	company: 'Company name',
+	submit: 'Submit',
 }

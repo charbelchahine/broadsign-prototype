@@ -3,6 +3,7 @@ import T from 'i18n-react'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'
 import contactHeader from '../assets/images/contactHeader.jpg'
+import { TextField, Button } from 'react-md';
 
 const TestPage = ({ pageContext: { lang }, location: { pathname } }) => (
 	<Layout path={pathname}>
@@ -59,6 +60,49 @@ const TestPage = ({ pageContext: { lang }, location: { pathname } }) => (
 					<span>{T.translate('contact.phone')}: +86 21 31203172</span>
 				</div>
 			</div>
+		</section>
+		<div id="gradientBar" className="content"></div>
+		<section id="contactForm" className="content">
+			<h6 id="contactFormTitle">Drop us a line</h6>
+			<div className="contactGrid">
+				<TextField
+				id="floating-center-title"
+				label={T.translate('contact.inquiry')}
+				lineDirection="center"
+				className="md-cell md-cell--bottom contactInput"
+				/>
+				<TextField
+				id="floating-center-title"
+				label={T.translate('contact.email')}
+				lineDirection="center"
+				className="md-cell md-cell--bottom contactInput"
+				/>
+				<TextField
+				id="floating-center-title"
+				label={T.translate('contact.first')}
+				lineDirection="center"
+				className="md-cell md-cell--bottom contactInput"
+				/>
+				<TextField
+				id="floating-center-title"
+				label={T.translate('contact.last')}
+				lineDirection="center"
+				className="md-cell md-cell--bottom contactInput"
+				/>
+				<TextField
+				id="floating-center-title"
+				label={T.translate('contact.phone')}
+				lineDirection="center"
+				className="md-cell md-cell--bottom contactInput"
+				/>
+				<TextField
+				id="floating-center-title"
+				label={T.translate('contact.company')}
+				lineDirection="center"
+				className="md-cell md-cell--bottom contactInput"
+				/>
+			</div>	
+			<Button raised secondary swapTheming id="submitForm">{T.translate('contact.submit')}</Button>
 		</section>
 	</Layout>
 )

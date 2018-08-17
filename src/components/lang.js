@@ -3,8 +3,6 @@ import T from 'i18n-react'
 import { push } from 'gatsby'
 import i18n from '../i18n/config/i18n'
 
-import { ListItem, MenuButton } from 'react-md';
-
 class LangSelector extends React.Component {
 	constructor(props) {
 		super(props)
@@ -35,22 +33,6 @@ class LangSelector extends React.Component {
 						</option>
 					))}
 				</select>
-     <MenuButton
-      anchor={{
-        x: MenuButton.HorizontalAnchors.INNER_LEFT,
-        y: MenuButton.VerticalAnchors.TOP,
-      }}
-      position={MenuButton.Positions.TOP_LEFT}
-      flat
-      primary
-      menuItems={Object.keys(i18n).map((lang, index) => (
-						<ListItem key={index} value={i18n[lang].path}
-							primaryText={i18n[lang].name} />
-						
-					))}
-    >
-      Language
-    </MenuButton>
 			</div>
 		)
 	}	

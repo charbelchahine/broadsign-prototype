@@ -4101,7 +4101,8 @@ body {
   src: url("/../../fonts/merriweather-thin.woff2") format("woff2"), url("/../../fonts/merriweather-thin.woff") format("woff"), url("/../../fonts/merriweather-thin.ttf") format("truetype"); }
 header {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 15px 0; }
 
 .navLogo {
   display: contents; }
@@ -4111,7 +4112,8 @@ header {
   max-width: 13rem; }
 
 .navLinks {
-  display: flex; }
+  display: flex;
+  align-self: center; }
 
 .langSelector {
   display: flex; }
@@ -4185,5 +4187,26 @@ section#contactContent .contact {
   section#contactContent .contact #address {
     display: flex;
     flex-direction: column; }
+
+#gradientBar {
+  background: #19CDFF;
+  background: linear-gradient(to right, #19cdff 15%, #1e1bb2 45%, #ff1919 90%);
+  display: block;
+  height: 3px;
+  width: 60%;
+  margin: 50px auto; }
+
+section#contactForm {
+  text-align: center; }
+
+.contactGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .contactGrid .contactInput {
+    min-width: 500px; }
+
+#submitForm {
+  margin: 30px 0; }
 
 /*# sourceMappingURL=index.css.map */

@@ -10,18 +10,16 @@ export default ({ children, path, seo }) => (
 	<div>
 		<Head seo={seo} path={path} />
 		<Header siteTitle="Broadsign">
-			<div className="navLinks">
-				<Link to="/blog">
-					<Button flat>Blog</Button>
-				</Link>
-				<Link to="/careers">
-					<Button flat>{T.translate('careers.title')}</Button>
-				</Link>
-				<Link to="/contact">
-					<Button flat>{T.translate('contact.title')}</Button>
-				</Link>
-				<Lang path={path} />
-			</div>
+			<Link to="/blog">
+				<Button flat>Blog</Button>
+			</Link>
+			<Link to="/careers">
+				<Button flat>{T.translate('careers.title')}</Button>
+			</Link>
+			<Link to="/contact">
+				<Button flat>{T.translate('contact.title')}</Button>
+			</Link>
+			<Lang path={path} />
 		</Header>
 		<div>{children}</div>
 	</div>

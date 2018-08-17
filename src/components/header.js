@@ -7,7 +7,7 @@ const Header = ({ children, data }) => (
 		<Link to="/" activeClassName="active" className="navLogo">
 			<img src={Logo} alt="Broadsign" className="broadsignLogo" />
 		</Link>
-		<div>{children}</div>
+		<div className="navLinks">{children}</div>
 	</header>
 )
 
