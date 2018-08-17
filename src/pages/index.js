@@ -52,28 +52,28 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 			<div className="productRow">
 				<div className="productText">
 					<img src={broadsignControl} alt="broadsignControl" className="broadsignControl" />
-					<span>Distribute content and ads across a network of any size with automated digital signage software</span>
+					<span>{T.translate('home.distribute')}</span>
 				</div>
 				<img src={controlLaptop} alt="controlLaptop" className="controlLaptop" />
 			</div>
 			<div className="productRow">
 				<div className="productText">
 					<img src={broadsignReach} alt="broadsignReach" className="broadsignReach" />
-					<span>Generate more revenue from your digital signage network with programmatic advertising sales</span>
+					<span>{T.translate('home.generate')}</span>
 				</div>
 				<img src={reachLaptop} alt="reachLaptop" className="reachLaptop" />
 			</div>
 			<div className="productRow">
 				<div className="productText">
 					<img src={broasignDirect} alt="broasignDirect" className="broasignDirect" />
-					<span>Sell smarter with a sales tool that syncs ad inventory with your network operations in real-time</span>
+					<span>{T.translate('home.sell')}</span>
 				</div>
 				<img src={directLaptop} alt="directLaptop" className="directLaptop" />
 			</div>
 			<div className="productRow">
 				<div className="productText">
 					<img src={broadsignPublish} alt="broadsignPublish" className="broadsignPublish" />
-					<span>Empower local teams to display beautiful custom digital signage messages with template-based content management</span>
+					<span>{T.translate('home.empower')}</span>
 				</div>
 				<img src={publishLaptop} alt="publishLaptop" className="publishLaptop" />
 			</div>		
