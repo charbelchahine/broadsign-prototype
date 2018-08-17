@@ -34,8 +34,8 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 			<div className="content">
 				<img src={timeSquare} alt="timeSquare" className="timeSquare" />
 				<div id="text">
-					<h2 id="title">Maximize your ad revenue with broadsign’s automated digital signage software</h2>
-					<p id="description">Trusted by the biggest names in digital out-of-home, we power more than 150,000 screens  across the globe</p>
+					<h2 id="title">{T.translate('home.maximize')}</h2>
+					<p id="description">{T.translate('home.trusted')}</p>
 				</div>
 			</div>		
 		</section>
