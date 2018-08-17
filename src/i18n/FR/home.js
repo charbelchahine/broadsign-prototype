@@ -4,7 +4,7 @@ module.exports = {
 	headerDescription: 'GRÂCE À NOUS, IL EST PLUS FACILE QUE JAMAIS D’ACHETER, DE VENDRE ET DE LIVRER DE LA PUBLICITÉ EXTÉRIEURE NUMÉRIQUE À L’ÉCHELLE DE LA PLANÈTE',
 	freeTrial:'COMMENCEZ VOTRE ESSAI GRATUIT',
 	liveDemo: 'DEMANDEZ UNE DÉMO EN DIRECT',
-	maximize: 'MAXIMISEZ VOS RECETTES PUBLICITAIRES GRÂCE AU LOGICIEL D’AFFICHAGE NUMÉRIQUE AUTOMATISÉ DE BROADSIGN',
+	maximize: 'MAXIMISEZ VOS RECETTES PUBLICITAIRES GRÂCE AU LOGICIEL',
 	trusted:  'Nous alimentons plus de 150 000 écrans dans le monde et les plus grands noms de la publicité extérieure numérique nous font confiance',
 	distribute: 'Distribuez du contenu et des annonces dans des réseaux de toutes tailles au moyen d’un logiciel d’affichage numérique automatisé',
 	generate: 'Générez davantage de recettes à partir de votre réseau d’affichage numérique grâce aux ventes publicitaires programmatiques',
