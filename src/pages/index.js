@@ -2,7 +2,6 @@ import React from 'react'
 import T from 'i18n-react'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'
-import Link from '../components/link'
 import { Button } from 'react-md';
 
 import homeHeader from '../assets/images/homeHeader.png'
@@ -31,9 +30,9 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 		<Helmet title={T.translate('home.title')} />
 		<section id="homeHeader">
 			<img src={homeHeader} alt="homeHeader" className="homeHeader" />
-			<div id="text" className="content">
-				<h1 id="title">{T.translate('home.header')}</h1>
-				<p id="description">{T.translate('home.headerDescription')}</p>
+			<div id="timeSquareText" className="content">
+				<h1 id="timeSquareTitle">{T.translate('home.header')}</h1>
+				<p id="timeSquareDescription">{T.translate('home.headerDescription')}</p>
 				<div id="ctas">
 					<Button raised secondary swapTheming id="freeTrial">{T.translate('home.freeTrial')}</Button>
 					<Button raised primary swapTheming id="liveDemo">{T.translate('home.liveDemo')}</Button>

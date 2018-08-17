@@ -62,19 +62,19 @@ section#timeSquare {
 		align-self: flex-end;
 		max-height: 360px;
 	}
-	#text {
+	#timeSquareText {
 		display: flex;
 		flex-direction: column;
 		align-self: center;
 		max-width: 585px;
-		#title {
+		#timeSquareTitle {
 			color: #A3D9EA;
 			font-family: "Roboto Black", sans-serif;
 			font-size: 65px;
 			line-height: 50.6px;
 			font-variant: small-caps;
 		}
-		#description {
+		#timeSquareDescription {
 			color: #2A2B6D;
 			font-size: 22px;
 			line-height: 34px;
