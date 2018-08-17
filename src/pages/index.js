@@ -21,14 +21,13 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 			<img src={homeHeader} alt="homeHeader" className="homeHeader" />
 			<div id="text" className="content">
 				<h1 id="title">{T.translate('home.header')}</h1>
-				<p id="description">We're making it easier than ever to buy, sell and deliver digital out-of-home media accross the globe</p>
+				<p id="description">{T.translate('home.headerDescription')}</p>
 				<div id="ctas">
 					<Button raised secondary swapTheming id="freeTrial">{T.translate('home.freeTrial')}</Button>
 					<Button raised primary swapTheming id="liveDemo">{T.translate('home.liveDemo')}</Button>
 				</div>
 			</div>
 		</section>
-		<h1>{T.translate('home.header')} !</h1>
 		<T.p
 			text={{
 				key: 'home.welcome',
