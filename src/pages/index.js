@@ -7,10 +7,10 @@ import { Button } from 'react-md';
 import homeHeader from '../assets/images/homeHeader.png'
 import timeSquare from '../assets/images/timeSquare.png'
 
-import broadsignControl from '../assets/images/broadsignControl.svg'
-import broadsignReach from '../assets/images/broadsignReach.svg'
-import broasignDirect from '../assets/images/broadsignDirect.svg'
-import broadsignPublish from '../assets/images/broadsignPublish.svg'
+import broadsignControl from '../assets/images/control.svg'
+import broadsignReach from '../assets/images/reach.svg'
+import broasignDirect from '../assets/images/direct.svg'
+import broadsignPublish from '../assets/images/publish.svg'
 
 import controlLaptop from '../assets/images/controlLaptop.svg'
 import directLaptop from '../assets/images/directLaptop.svg'
