@@ -4209,19 +4209,36 @@ section#homeProducts {
       line-height: 34px;
       color: #001645; }
 
-section#contactContent #secondRow {
-  display: flex;
-  justify-content: space-between; }
-section#contactContent .contact {
-  display: flex;
-  flex-direction: column; }
-  section#contactContent .contactInfo {
-    display: flex; }
-  section#contactContent .contact #address {
+section#contactContent {
+  margin: 70px auto; }
+  section#contactContent h3 {
+    font-family: "Roboto Black", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase; }
+  section#contactContent #title {
+    color: #A3D9EA;
+    font-family: "Roboto Black", sans-serif;
+    font-size: 65px;
+    line-height: 50.6px;
+    font-variant: small-caps; }
+  section#contactContent #secondRow {
     display: flex;
-    flex-direction: column; }
+    justify-content: space-between; }
+  section#contactContent .contact {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 20px; }
+    section#contactContent .contactInfo {
+      display: flex; }
+      section#contactContent .contactInfo #address {
+        margin-right: 20px; }
+    section#contactContent .contact #address {
+      display: flex;
+      flex-direction: column; }
 
-#address span {
+#address span,
+.contact span {
   font-size: 18px;
   line-height: 30px; }
 

@@ -3,7 +3,7 @@ module.exports = {
 	header: 'Contact Us',
 	mtl: 'Montreal',
 	headquarters: '(Headquarters)',
-	floor: '12th&nbsp;Floor',
+	floor: '12th Floor',
 	mtlqc: 'Montreal, Quebec',
 	phone: 'Phone',
 	tollfree: 'Toll-Free',

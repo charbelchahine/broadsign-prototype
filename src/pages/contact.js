@@ -17,7 +17,7 @@ const TestPage = ({ pageContext: { lang }, location: { pathname } }) => (
 				{T.translate('contact.header')}
 			</h1>		
 			<div class="contact">
-				<h3>{T.translate('contact.mtl')} <span>{T.translate('contact.headquarters')}</span></h3>
+				<h3>{T.translate('contact.mtl')}&nbsp;{T.translate('contact.headquarters')}</h3>
 				<div class="contactInfo">
 					<div id="address">
 						<span>1100 Robert-Bourassa, {T.translate('contact.floor')}</span>

@@ -3,7 +3,7 @@ module.exports = {
 	header: 'Nous Rejoindre',
 	mtl: 'Montréal',
 	headquarters: '(Siège social)',
-	floor: '12e&nbsp;étage',
+	floor: '12e étage',
 	mtlqc: 'Montréal, Québec',
 	phone: 'Téléphone',
 	tollfree: 'Sans Frais',
