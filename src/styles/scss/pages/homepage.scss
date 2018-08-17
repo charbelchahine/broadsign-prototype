@@ -49,3 +49,29 @@ section#homeHeader {
 	}
 }
 
+section#timeSquare {
+	background-image: linear-gradient(#ffffff, #f8fcfd);
+	height: 400px;
+	.content {
+		display: flex;
+		justify-content: space-around;
+		height: 100%;
+	}
+	img {
+		display: flex;
+		align-self: flex-end;
+		max-height: 360px;
+	}
+	#text {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		max-width: 585px;
+		#title {
+			color: #A3D9EA;
+		}
+		#description {
+			color: #2A2B6D;
+		}
+	}
+}

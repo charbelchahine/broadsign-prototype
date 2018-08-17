@@ -5,6 +5,8 @@ import Helmet from 'react-helmet'
 import Link from '../components/link'
 import { Button } from 'react-md';
 import homeHeader from '../assets/images/homeHeader.png'
+import timeSquare from '../assets/images/timeSquare.png'
+
 
 import '../styles/css/index.css';
 
@@ -27,6 +29,15 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 					<Button raised primary swapTheming id="liveDemo">{T.translate('home.liveDemo')}</Button>
 				</div>
 			</div>
+		</section>
+		<section id="timeSquare">
+			<div className="content">
+				<img src={timeSquare} alt="timeSquare" className="timeSquare" />
+				<div id="text">
+					<h2 id="title">Maximize your ad revenue with broadsign’s automated digital signage software</h2>
+					<p id="description">Trusted by the biggest names in digital out-of-home, we power more than 150,000 screens  across the globe</p>
+				</div>
+			</div>		
 		</section>
 		<T.p
 			text={{
