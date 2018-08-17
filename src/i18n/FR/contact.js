@@ -1,5 +1,15 @@
 module.exports = {
 		title: 'Nous Rejoindre',
 		header: 'Nous Rejoindre',
-		message: 'Ceci est un test'
+		mtl: 'Montréal',
+		headquarters: '(Siège social)',
+		floor: '12e&nbsp;étage',
+		mtlqc: 'Montréal, Québec',
+		phone: 'Téléphone',
+		tollfree: 'Sans Frais',
+		fax: 'Télécopieur',
+		emea: 'EMOA',
+		belgium: 'Belgique',
+		germany: 'Allemagne',
+		china: 'Chine',
 }

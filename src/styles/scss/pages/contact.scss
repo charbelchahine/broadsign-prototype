@@ -1,0 +1,17 @@
+section#contactContent {
+	#secondRow {
+		display: flex;
+		justify-content: space-between;
+	}
+	.contact {
+		display: flex;
+		flex-direction: column;
+		&Info {
+			display: flex;
+		}
+		#address {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}

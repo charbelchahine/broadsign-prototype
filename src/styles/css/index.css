@@ -4153,4 +4153,16 @@ section#homeHeader {
     background-color: #1c3356;
     color: #00C8ff; }
 
+section#contactContent #secondRow {
+  display: flex;
+  justify-content: space-between; }
+section#contactContent .contact {
+  display: flex;
+  flex-direction: column; }
+  section#contactContent .contactInfo {
+    display: flex; }
+  section#contactContent .contact #address {
+    display: flex;
+    flex-direction: column; }
+
 /*# sourceMappingURL=index.css.map */

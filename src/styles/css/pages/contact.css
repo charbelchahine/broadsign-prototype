@@ -1,0 +1,13 @@
+section#contactContent #secondRow {
+  display: flex;
+  justify-content: space-between; }
+section#contactContent .contact {
+  display: flex;
+  flex-direction: column; }
+  section#contactContent .contactInfo {
+    display: flex; }
+  section#contactContent .contact #address {
+    display: flex;
+    flex-direction: column; }
+
+/*# sourceMappingURL=contact.css.map */

@@ -1,5 +1,15 @@
 module.exports = {
 	title: 'Contact Us',
 	header: 'Contact Us',
-	message: 'This is a test'
+	mtl: 'Montreal',
+	headquarters: '(Headquarters)',
+	floor: '12th&nbsp;Floor',
+	mtlqc: 'Montreal, Quebec',
+	phone: 'Phone',
+	tollfree: 'Toll-Free',
+	fax: 'Fax',
+	emea: 'EMEA',
+	belgium: 'Belgium',
+	germany: 'Germany',
+	china: 'China',
 }
