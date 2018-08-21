@@ -1,3 +1,4 @@
+![broadsign prototype logo](https://user-images.githubusercontent.com/14867027/44412502-19d56580-a537-11e8-95c4-2d73b5100771.png)
 # Broadsign Prototype
 
 One Paragraph of project description goes here
