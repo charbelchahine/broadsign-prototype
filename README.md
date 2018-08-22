@@ -57,6 +57,7 @@ Prototype is currently hosted on https://broadsign.netlify.com/
 ## Issues
 - [ ] TODO: Clean code into reusable components
 - [ ] TODO: Clean SCSS
+- [ ] TODO: Paginate `/blog`
 - [ ] FIXME: Nav logo & strings don't function properly in the `/blog` path 
 
 ## Built With
