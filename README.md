@@ -12,19 +12,16 @@ These instructions will get you a copy of the prototype up and running on your l
 
 Make sure to have [Node](https://nodejs.org/) & [Yarn](https://yarnpkg.com/) installed on your local machine
 
-Install React & Gatsby's command line tool
+Open a terminal window and install React & Gatsby's command line tool
 ```
 yarn add react react-dom gatsby-cli
 ```
 
 ### Installing
 
-Clone the repo in the directory of your choice
+Clone the repo in the directory of your choice and then move to this new directory
 ```
 git clone https://github.com/charbelchahine/broadsign-prototype.git
-```
-Change directories
-```
 cd broadsign-prototype
 ```
 
@@ -33,21 +30,28 @@ Install all dependencies for the prototype
 yarn install
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+## Development
 
-## Running the tests
-
-Explain how to run the automated tests for this system
+Start a hot-reloading development environment
+```
+gatsby develop
+```
+You will now be able to view the prototype at http://localhost:8000/. Any change you make to your React components will immediately be visible in the browser.
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+While developing, make sure your newly added features don't cause errors when attempting to build for production. Running the following command will produce a directory of static HTML and JavaScript files which you can later deploy to a static site hosting service
+```
+gatsby build
+```
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [GatsbyJS](https://www.gatsbyjs.org) - to obtain static/offline Progressive Web App  
+* [gatsby-source-wordpress](https://www.gatsbyjs.org/packages/gatsby-source-wordpress/?=wordpress) - pulling data with GraphQL from WordPress sites using the WordPress REST API.
+* [react-i18next](https://react.i18next.com/) - Internationalization to obtain multilingual site
+* [Sass](https://sass-lang.com) - for styling
+* [react-md](https://react-md.mlaursen.com/) - Material UI components customizable in Sass instead of inline styles
 
 ## Authors
 
@@ -57,8 +61,3 @@ Add additional notes about how to deploy this on a live system
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
