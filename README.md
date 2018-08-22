@@ -45,6 +45,20 @@ While developing, make sure your newly added features don't cause errors when at
 gatsby build
 ```
 
+To test the prototype for production, you can build and deploy it to [Surge](https://surge.sh) or [Netlify](https://www.netlify.com)
+* [Deploy Gatsby project to Surge](https://www.gatsbyjs.org/tutorial/part-one/#deploying-gatsbyjs-websites)
+* [Deploy Gatsby project to Netlify](https://app.netlify.com/start)
+* More deploy options [here](https://www.gatsbyjs.org/docs/deploy-gatsby/)
+
+## Demo
+
+Prototype is currently hosted on https://broadsign.netlify.com/
+
+## Issues
+- [ ] TODO: Clean code into reusable components
+- [ ] TODO: Clean SCSS
+- [ ] FIXME: Nav logo & strings don't function properly in the `/blog` path 
+
 ## Built With
 
 * [GatsbyJS](https://www.gatsbyjs.org) - to obtain static/offline Progressive Web App  
@@ -56,8 +70,3 @@ gatsby build
 ## Authors
 
 **Charbel Chahine** - [LinkedIn](https://www.linkedin.com/in/charbelchahine/)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
