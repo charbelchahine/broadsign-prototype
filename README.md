@@ -48,6 +48,11 @@ gatsby develop
 ```
 You will now be able to view the prototype at http://localhost:8000/. Any change you make to your React components will immediately be visible in the browser.
 
+When making changes to the SCSS, make sure to open a new terminal window and run the following command beforehand to re-compile the CSS each time you save your SCSS files.
+```
+yarn sass
+```
+
 ## Deployment
 
 While developing, make sure your newly added features don't cause errors when attempting to build for production. Running the following command will produce a directory of static HTML and JavaScript files which you can later deploy to a static site hosting service
