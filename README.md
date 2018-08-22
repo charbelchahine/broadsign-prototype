@@ -1,4 +1,4 @@
-![broadsign prototype logo](https://user-images.githubusercontent.com/14867027/44412760-b992f380-a537-11e8-8641-a1c307a456da.png)
+<span style="display:block;text-align:center">![broadsign prototype logo](https://user-images.githubusercontent.com/14867027/44469280-202a1700-a5f5-11e8-8214-2420517d07cf.png)</span>
 
 # Broadsign Prototype
 
