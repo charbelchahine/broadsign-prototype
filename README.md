@@ -4,6 +4,16 @@
 
 Prototype of a [ReactJS](https://reactjs.org) version of [Broadsign.com](https://broadsign.com) running on [GatsbyJS](https://www.gatsbyjs.org) to obtain a faster & static Progressive Web App, capable of running offline.
 
+## Table of Contents
+* [Getting Started](#getting-started)
+   * [Prerequisites](#prerequisites)
+   * [Installing](#installing)
+* [Development](#development)
+* [Deployment](#deployment)
+* [Demo](#demo)
+* [Issues](#issues)
+* [Author](#author)
+
 ## Getting Started
 
 These instructions will get you a copy of the prototype up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -68,6 +78,6 @@ Prototype is currently hosted on https://broadsign.netlify.com/
 * [Sass](https://sass-lang.com) - for styling
 * [react-md](https://react-md.mlaursen.com/) - Material UI components customizable in Sass instead of inline styles
 
-## Authors
+## Author
 
 **Charbel Chahine** - [LinkedIn](https://www.linkedin.com/in/charbelchahine/)
