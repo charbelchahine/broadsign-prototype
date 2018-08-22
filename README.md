@@ -10,18 +10,18 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+download node & yarn
 
+download react & gatsby
 ```
 Give examples
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+git clone 
 
-Say what the step will be
-
+run yarn install
 ```
 Give the example
 ```
