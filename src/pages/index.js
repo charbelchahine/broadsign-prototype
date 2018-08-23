@@ -7,8 +7,6 @@ import { Button } from 'react-md';
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import timeSquare from '../assets/images/timeSquare.png'
-
 import broadsignControl from '../assets/images/control.svg'
 import broadsignReach from '../assets/images/reach.svg'
 import broasignDirect from '../assets/images/direct.svg'
@@ -43,7 +41,7 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname }, data }) => (
 		</section>
 		<section id="timeSquare">
 			<div className="content">
-				<img src={timeSquare} alt="timeSquare" className="timeSquare" />
+				<Img fixed={data.TimeSquare.childImageSharp.fixed}  alt="timeSquare" className="timeSquare" />
 				<div id="text">
 					<h2 id="title">{T.translate('home.maximize')}</h2>
 					<p id="description">{T.translate('home.trusted')}</p>
@@ -94,9 +92,20 @@ export const queryIndex = graphql`
 		}
 	}
 
+	fragment fixedTimeSquare on File {
+		childImageSharp {
+			fixed(width: 450, height: 360, quality: 100) {
+				...GatsbyImageSharpFixed_withWebp
+			}
+		}
+	}
+
 	query IndexImages {
 		Header: file(relativePath: { eq: "assets/images/homeHeader.png" }) {
 			...fixedHeader
+		}
+		TimeSquare: file(relativePath: { eq: "assets/images/timeSquare.png" }) {
+			...fixedTimeSquare
 		}
 	}
 `

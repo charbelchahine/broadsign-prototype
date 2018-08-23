@@ -42,7 +42,7 @@ section#timeSquare {
     display: flex;
     justify-content: space-around;
     height: 100%; }
-  section#timeSquare img {
+  section#timeSquare .gatsby-image-outer-wrapper {
     display: flex;
     align-self: flex-end;
     max-height: 360px; }
