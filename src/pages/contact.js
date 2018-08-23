@@ -2,15 +2,17 @@ import React from 'react'
 import T from 'i18n-react'
 import Layout from '../components/layout'
 import Helmet from 'react-helmet'
-import contactHeader from '../assets/images/contactHeader.jpg'
 import { TextField, Button } from 'react-md';
 
-const TestPage = ({ pageContext: { lang }, location: { pathname } }) => (
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
+const ContactPage = ({ pageContext: { lang }, location: { pathname }, data }) => (
 	<Layout path={pathname}>
 		{T.setTexts(lang)}
 		<Helmet title={T.translate('contact.title')} />
 		<section id="homeHeader">
-			<img src={contactHeader} alt="contactHeader" className="contactHeader" />
+			<Img fixed={data.Header.childImageSharp.fixed} alt="contactHeader" className="contactHeader" />
 		</section>
 		<section id="contactContent" className="content">
 			<h1 id="title">
@@ -107,4 +109,12 @@ const TestPage = ({ pageContext: { lang }, location: { pathname } }) => (
 	</Layout>
 )
 
-export default TestPage
+export default ContactPage
+
+export const queryContact = graphql`
+	query ContactImages {
+		Header: file(relativePath: { eq: "assets/images/contactHeader.jpg" }) {
+			...fixedHeader
+		}
+	}
+`
