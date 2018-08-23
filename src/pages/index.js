@@ -42,9 +42,9 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname }, data }) => (
 		<section id="timeSquare">
 			<div className="content">
 				<Img fixed={data.TimeSquare.childImageSharp.fixed}  alt="timeSquare" className="timeSquare" />
-				<div id="text">
-					<h2 id="title">{T.translate('home.maximize')}</h2>
-					<p id="description">{T.translate('home.trusted')}</p>
+				<div className="timeSquareText">
+					<h2 className="timeSquareTitle">{T.translate('home.maximize')}</h2>
+					<p className="timeSquareDescription">{T.translate('home.trusted')}</p>
 				</div>
 			</div>		
 		</section>

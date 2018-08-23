@@ -46,18 +46,18 @@ section#timeSquare {
     display: flex;
     align-self: flex-end;
     max-height: 360px; }
-  section#timeSquare #text {
+  section#timeSquare .timeSquareText {
     display: flex;
     flex-direction: column;
     align-self: center;
     max-width: 585px; }
-    section#timeSquare #text #title {
+    section#timeSquare .timeSquareText .timeSquareTitle {
       color: #A3D9EA;
       font-family: "Roboto Black", sans-serif;
       font-size: 65px;
       line-height: 50.6px;
       font-variant: small-caps; }
-    section#timeSquare #text #description {
+    section#timeSquare .timeSquareText .timeSquareDescription {
       color: #2A2B6D;
       font-size: 22px;
       line-height: 34px; }
