@@ -12,11 +12,6 @@ import broadsignReach from '../assets/images/reach.svg'
 import broasignDirect from '../assets/images/direct.svg'
 import broadsignPublish from '../assets/images/publish.svg'
 
-import controlLaptop from '../assets/images/controlLaptop.svg'
-import directLaptop from '../assets/images/directLaptop.svg'
-import publishLaptop from '../assets/images/publishLaptop.svg'
-import reachLaptop from '../assets/images/reachLaptop.svg'
-
 import '../styles/css/index.css';
 
 const seo = {
@@ -54,28 +49,28 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname }, data }) => (
 					<img src={broadsignControl} alt="broadsignControl" className="broadsignControl" />
 					<span>{T.translate('home.distribute')}</span>
 				</div>
-				<img src={controlLaptop} alt="controlLaptop" className="controlLaptop" />
+				<Img fixed={data.ControlLaptop.childImageSharp.fixed} alt="controlLaptop" className="controlLaptop" />
 			</div>
 			<div className="productRow">
 				<div className="productText">
 					<img src={broadsignReach} alt="broadsignReach" className="broadsignReach" />
 					<span>{T.translate('home.generate')}</span>
 				</div>
-				<img src={reachLaptop} alt="reachLaptop" className="reachLaptop" />
+				<Img fixed={data.ReachLaptop.childImageSharp.fixed}  alt="reachLaptop" className="reachLaptop" />
 			</div>
 			<div className="productRow">
 				<div className="productText">
 					<img src={broasignDirect} alt="broasignDirect" className="broasignDirect" />
 					<span>{T.translate('home.sell')}</span>
 				</div>
-				<img src={directLaptop} alt="directLaptop" className="directLaptop" />
+				<Img fixed={data.DirectLaptop.childImageSharp.fixed}  alt="directLaptop" className="directLaptop" />
 			</div>
 			<div className="productRow">
 				<div className="productText">
 					<img src={broadsignPublish} alt="broadsignPublish" className="broadsignPublish" />
 					<span>{T.translate('home.empower')}</span>
 				</div>
-				<img src={publishLaptop} alt="publishLaptop" className="publishLaptop" />
+				<Img fixed={data.PublishLaptop.childImageSharp.fixed}  alt="publishLaptop" className="publishLaptop" />
 			</div>		
 		</section>
 	</Layout>
@@ -100,12 +95,32 @@ export const queryIndex = graphql`
 		}
 	}
 
+	fragment fixedProductLaptops on File {
+		childImageSharp {
+			fixed(width: 635, height: 325, quality: 100) {
+				...GatsbyImageSharpFixed_withWebp
+			}
+		}
+	}
+
 	query IndexImages {
 		Header: file(relativePath: { eq: "assets/images/homeHeader.png" }) {
 			...fixedHeader
 		}
 		TimeSquare: file(relativePath: { eq: "assets/images/timeSquare.png" }) {
 			...fixedTimeSquare
+		}
+		ControlLaptop: file(relativePath: { eq: "assets/images/controlLaptop.png" }) {
+			...fixedProductLaptops
+		}
+		PublishLaptop: file(relativePath: { eq: "assets/images/publishLaptop.png" }) {
+			...fixedProductLaptops
+		}
+		ReachLaptop: file(relativePath: { eq: "assets/images/reachLaptop.png" }) {
+			...fixedProductLaptops
+		}
+		DirectLaptop: file(relativePath: { eq: "assets/images/directLaptop.png" }) {
+			...fixedProductLaptops
 		}
 	}
 `
