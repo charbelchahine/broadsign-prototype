@@ -4,7 +4,9 @@ import Layout from '../components/layout'
 import Helmet from 'react-helmet'
 import { Button } from 'react-md';
 
-import homeHeader from '../assets/images/homeHeader.png'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
 import timeSquare from '../assets/images/timeSquare.png'
 
 import broadsignControl from '../assets/images/control.svg'
@@ -24,12 +26,12 @@ const seo = {
 	description: 'That is a Gatsby Site hosted on Netlify'
 }
 
-const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
+const IndexPage = ({ pageContext: { lang }, location: { pathname }, data }) => (
 	<Layout path={pathname} seo={seo}>
 		{T.setTexts(lang)}
 		<Helmet title={T.translate('home.title')} />
 		<section id="homeHeader">
-			<img src={homeHeader} alt="homeHeader" className="homeHeader" />
+			<Img fixed={data.Header.childImageSharp.fixed} alt="homeHeader" className="homeHeader" />
 			<div id="text" className="content">
 				<h1 id="title">{T.translate('home.header')}</h1>
 				<p id="description">{T.translate('home.headerDescription')}</p>
@@ -82,3 +84,19 @@ const IndexPage = ({ pageContext: { lang }, location: { pathname } }) => (
 )
 
 export default IndexPage
+
+export const queryIndex = graphql`
+	fragment fixedHeader on File {
+		childImageSharp {
+			fixed(width: 1600, height: 578, quality: 100) {
+				...GatsbyImageSharpFixed_withWebp
+			}
+		}
+	}
+
+	query IndexImages {
+		Header: file(relativePath: { eq: "assets/images/homeHeader.png" }) {
+			...fixedHeader
+		}
+	}
+`

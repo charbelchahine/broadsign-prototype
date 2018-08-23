@@ -8,12 +8,12 @@
 	margin: 0;
 }
 
-section#homeHeader {
+#homeHeader {
 	@extend %headers;
 	display: flex;
 	align-items: center;
-	.homeHeader {
-		position: absolute;
+	.gatsby-image-outer-wrapper {
+		position: absolute !important;
 	}
 	#text {
 		z-index: 2;
